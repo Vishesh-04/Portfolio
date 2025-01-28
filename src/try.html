@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/8fc9dc97d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header" class="header flex flex-col justify-center">
+      <!-- Toggle button for small screens -->
+      <!-- <i class="header-toggle hidden xl:block fas fa-bars text-2xl cursor-pointer"></i> -->
+
+      <!-- Navigation Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul class="space-y-4">
+          <li>
+            <a
+              href="#hero"
+              class="active flex items-center space-x-2 text-blue-500 hover:text-blue-700"
+            >
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="flex items-center space-x-2 text-gray-700 hover:text-blue-700"
+            >
+              <i class="fas fa-user"></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#resume"
+              class="flex items-center space-x-2 text-gray-700 hover:text-blue-700"
+            >
+              <i class="fas fa-file-alt"></i>
+              <span>Resume</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="flex items-center space-x-2 text-gray-700 hover:text-blue-700"
+            >
+              <i class="fas fa-images"></i>
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="flex items-center space-x-2 text-gray-700 hover:text-blue-700"
+            >
+              <i class="fas fa-layer-group"></i>
+              <span>Services</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="flex items-center space-x-2 text-gray-700 hover:text-blue-700"
+            >
+              <i class="fas fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      id="hero"
+      class="text-gray-600 body-font bg-white dark:bg-slate-900 h-screen"
+    >
+      <div
+        class="container mx-auto flex px-20 xl:py-24 py-50 xl:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h1
+            class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal"
+          >
+            Vishesh Jindal
+          </h1>
+          <div class="text-center">
+            <p class="text-lg">
+              I'm
+              <span
+                id="typed"
+                class="typed text-blue-500 font-semibold"
+                data-typed-items="Developer, Freelancer"
+              >
+                Developer
+              </span>
+              <span
+                class="typed-cursor typed-cursor--blink text-blue-500 font-semibold"
+                aria-hidden="true"
+              ></span>
+            </p>
+          </div>
+          <div class="flex justify-center py-10">
+            <span class="inline-flex">
+              <a class="text-gray-500">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-2 text-gray-500">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                  ></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="hidden xl:block lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6"
+        >
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="https://www.svgrepo.com/show/490900/hot-air-balloon.svg"
+          />
+        </div>
+      </div>
+    </section>
+    <section id = "about" class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
+          >
+            About
+          </h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
+            pug.
+          </p>
+        </div>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium"
+                >Authentic Cliche Forage</span
+              >
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium"
+                >Kinfolk Chips Snackwave</span
+              >
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Coloring Book Ethical</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium"
+                >Typewriter Polaroid Cray</span
+              >
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Pack Truffaut Blue</span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                class="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">The Catcher In The Rye</span>
+            </div>
+          </div>
+        </div>
+        <button
+          class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        >
+          Button
+        </button>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const typedItems = document
+          .querySelector("#typed")
+          .dataset.typedItems.split(", ");
+        new Typed("#typed", {
+          strings: typedItems,
+          typeSpeed: 80,
+          backSpeed: 50,
+          backDelay: 2000,
+          loop: true,
+        });
+      });
+    </script>
+  </body>
+</html>
