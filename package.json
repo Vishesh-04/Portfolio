@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
     "@tailwindcss/cli": "^4.0.0",
     "flowbite": "^2.5.2",
     "tailwindcss": "^4.0.0"
