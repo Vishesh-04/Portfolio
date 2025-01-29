@@ -1,106 +1,160 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="assests/css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assests/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/8fc9dc97d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="./output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="main.css" />
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://kit.fontawesome.com/8fc9dc97d5.js" crossorigin="anonymous"></script>
-</head>
+  <body class="index-page">
 
-<body class="index-page">
-  <header id="header" class="header flex flex-col justify-center">
-    <i class="header-toggle hidden xl:block fas fa-bars text-2xl cursor-pointer"></i>
+    <header id="header" class="header flex flex-col justify-center">
+      <i
+        class="header-toggle hidden xl:block fas fa-bars text-2xl cursor-pointer"
+      ></i>
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li>
-          <a href="#hero" class="active"><i class="fas fa-home navicon"></i><span>Home</span></a>
-        </li>
-        <li>
-          <a href="#about"><i class="fas fa-user navicon"></i><span>About</span></a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1JKAi9ff6GyPDumWHQ-Fu6eZB5W_wL_TC/view?usp=sharing"
-            target="_blank"><i class="fas fa-file-alt navicon"></i><span>Resume</span></a>
-        </li>
-        <li>
-          <a href="#skills"><i class="fas fa-code navicon"></i><span>Skills</span></a>
-        </li>
-        <li>
-          <a href="#portfolio"><i class="fa-solid fa-briefcase"></i><span>Portfolio</span></a>
-        </li>
-        <li>
-          <a href="#services"><i class="fas fa-layer-group navicon"></i><span>Services</span></a>
-        </li>
-        <li>
-          <a href="#contact"><i class="fas fa-envelope navicon"></i><span>Contact</span></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <section id="hero" class="text-gray-600 body-font bg-white dark:bg-slate-900 h-screen">
-    <div class="container mx-auto flex px-20 xl:py-24 py-50 xl:flex-row flex-col items-center">
-      <div
-        class="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1
-          class="text-2xl font-extrabold leading-9 tracking-tight mb-3 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
-          Vishesh Jindal
-        </h1>
-        <div class="text-center">
-          <p class="text-lg">
-            I'm
-            <span id="typed" class="typed text-blue-500 font-semibold"
-              data-typed-items="Developer, Freelancer, Competitive Programmer">
-              Developer
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="fas fa-home navicon"></i><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#about"
+              ><i class="fas fa-user navicon"></i><span>About</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1JKAi9ff6GyPDumWHQ-Fu6eZB5W_wL_TC/view?usp=sharing"
+              target="_blank"
+              ><i class="fas fa-file-alt navicon"></i><span>Resume</span></a
+            >
+          </li>
+          <li>
+            <a href="#skills"
+              ><i class="fas fa-code navicon"></i><span>Skills</span></a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="fa-solid fa-briefcase"></i><span>Portfolio</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="fas fa-envelope navicon"></i><span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero"
+      class="text-gray-600 body-font bg-white dark:bg-slate-900 h-screen"
+    >
+      <div data-aos="fade-up" data-aos-duration="1500"
+        class="container mx-auto flex px-20 xl:py-24 py-50 xl:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h1
+            class="text-2xl font-extrabold leading-9 tracking-tight mb-3 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal"
+          >
+            Vishesh Jindal
+          </h1>
+          <div class="text-center">
+            <p class="text-lg">
+              I'm
+              <span
+                id="typed"
+                class="typed text-blue-500 font-semibold"
+                data-typed-items="Developer, Freelancer, Competitive Programmer"
+              >
+                Developer
+              </span>
+              <span
+                class="typed-cursor typed-cursor--blink text-blue-500 font-semibold"
+                aria-hidden="true"
+              ></span>
+            </p>
+          </div>
+          <div
+            class="flex justify-center py-10"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <span class="inline-flex space-x-4">
+              <a
+                class="text-gray-500 text-2xl hover:text-blue-600"
+                href="https://linkedin.com/in/vishesh-jindal"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                class="text-gray-500 text-2xl hover:text-gray-800"
+                href="https://github.com/Vishesh-04"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                class="text-gray-500 text-2xl hover:text-pink-500"
+                href="https://www.instagram.com/vishesh_jindal_28/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </span>
-            <span class="typed-cursor typed-cursor--blink text-blue-500 font-semibold" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div
+          class="hidden xl:block lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6 rounded-xl bg-white border-8"
+        >
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="assests/images/Vishesh.jpg"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="text-gray-600 body-font">
+      <div class="container px-5 py-16 mx-auto pt-30">
+        <div class="text-center mb-2">
+          <h1
+            class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
+          >
+            About
+          </h1>
+          <p class="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">
+            I'm Vishesh Jindal, a Computer Science Engineering student at Meerut
+            Institute of Engineering and Technology. With a strong foundation in
+            front-end web development and Java coding, I have evolved into a
+            Full Stack Java Developer, capable of building robust and scalable
+            solutions. I am also a passionate competitive coder, constantly
+            solving complex problems and improving my algorithmic thinking. My
+            drive for technology pushes me to continually learn and innovate,
+            with the goal of leveraging my skills to create impactful digital
+            experiences.
           </p>
         </div>
-        <div class="flex justify-center py-10">
-          <span class="inline-flex space-x-4">
-            <a class="text-gray-500 text-2xl hover:text-blue-600" href="https://linkedin.com/in/vishesh-jindal"
-              target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a class="text-gray-500 text-2xl hover:text-gray-800" href="https://github.com/Vishesh-04" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a class="text-gray-500 text-2xl hover:text-pink-500" href="https://www.instagram.com/vishesh_jindal_28/"
-              target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </span>
-        </div>
-      </div>
-      <div class="hidden xl:block lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6 rounded-xl bg-white border-8">
-        <img class="object-cover object-center rounded" alt="hero" src="assests/images/Vishesh.jpg" />
-      </div>
-    </div>
-  </section>
-  <section id="about" class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="text-center mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-          About
-        </h1>
-        <p class="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">
-          I'm Vishesh Jindal, a Computer Science Engineering student at Meerut
-          Institute of Engineering and Technology. With a strong foundation in
-          front-end web development and Java coding, I have evolved into a
-          Full Stack Java Developer, capable of building robust and scalable
-          solutions. I am also a passionate competitive coder, constantly
-          solving complex problems and improving my algorithmic thinking. My
-          drive for technology pushes me to continually learn and innovate,
-          with the goal of leveraging my skills to create impactful digital
-          experiences.
-        </p>
-      </div>
-      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <!-- <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
         <div class="p-2 sm:w-1/2 w-full">
           <div class="bg-gray-100 rounded flex p-4 h-full items-center">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
@@ -161,490 +215,1100 @@
             <span class="title-font font-medium">The Catcher In The Rye</span>
           </div>
         </div>
+      </div> -->
       </div>
-    </div>
-  </section>
-  <section id="skills" class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="text-center mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-          Skills
+    </section>
+    <section id="coding">
+      <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+        <h1
+          class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+        >
+          Coding Profiles
         </h1>
+        <span class="inline-flex">
+          <div
+            class="flex justify-center py-10"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <span class="inline-flex space-x-6">
+              <a
+                class="hover:scale-125 transition-all duration-1000 text-gray-900 text-2xl hover:text-blue-600"
+                href="https://leetcode.com/u/vishesh-04/"
+                target="_blank"
+              >
+                <svg
+                  width="48"
+                  height="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  id="leetcode"
+                >
+                  <path
+                    fill="#B3B1B0"
+                    d="M22 14.355c0-.742-.564-1.346-1.26-1.346H10.676c-.696 0-1.26.604-1.26 1.346s.563 1.346 1.26 1.346H20.74c.696.001 1.26-.603 1.26-1.346z"
+                  ></path>
+                  <path
+                    fill="#E7A41F"
+                    d="m3.482 18.187 4.313 4.361c.973.979 2.318 1.452 3.803 1.452 1.485 0 2.83-.512 3.805-1.494l2.588-2.637c.51-.514.492-1.365-.039-1.9-.531-.535-1.375-.553-1.884-.039l-2.676 2.607c-.462.467-1.102.662-1.809.662s-1.346-.195-1.81-.662l-4.298-4.363c-.463-.467-.696-1.15-.696-1.863 0-.713.233-1.357.696-1.824l4.285-4.38c.463-.467 1.116-.645 1.822-.645s1.346.195 1.809.662l2.676 2.606c.51.515 1.354.497 1.885-.038.531-.536.549-1.387.039-1.901l-2.588-2.636a4.994 4.994 0 0 0-2.392-1.33l-.034-.007 2.447-2.503c.512-.514.494-1.366-.037-1.901-.531-.535-1.376-.552-1.887-.038l-10.018 10.1C2.509 11.458 2 12.813 2 14.311c0 1.498.509 2.896 1.482 3.876z"
+                  ></path>
+                  <path
+                    fill="#070706"
+                    d="M8.115 22.814a2.109 2.109 0 0 1-.474-.361c-1.327-1.333-2.66-2.66-3.984-3.997-1.989-2.008-2.302-4.937-.786-7.32a6 6 0 0 1 .839-1.004L13.333.489c.625-.626 1.498-.652 2.079-.067.56.563.527 1.455-.078 2.066-.769.776-1.539 1.55-2.309 2.325-.041.122-.14.2-.225.287-.863.876-1.75 1.729-2.601 2.618-.111.116-.262.186-.372.305-1.423 1.423-2.863 2.83-4.266 4.272-1.135 1.167-1.097 2.938.068 4.127 1.308 1.336 2.639 2.65 3.961 3.974.067.067.136.132.204.198.468.303.474 1.25.183 1.671-.321.465-.74.75-1.333.728-.199-.006-.363-.086-.529-.179z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="hover:scale-125 transition-all duration-1000 text-gray-900 text-2xl hover:text-gray-800"
+                href="https://www.codechef.com/users/vishesh_04"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#5d4037"
+                    d="M34.809,32.711L34.809,32.711c1.016,0.306,1.952,0.833,2.74,1.543 c0.133,0.085,0.219,0.228,0.23,0.386c0,0.235-0.175,0.466-0.536,0.686c-0.648,0.434-1.273,0.9-1.873,1.398 c-0.592,0.483-1.212,0.93-1.858,1.337c-0.083,0.044-0.176,0.068-0.27,0.07c-0.132,0.002-0.26-0.048-0.356-0.14 c-0.184-0.16-0.203-0.438-0.043-0.622c0.004-0.005,0.009-0.01,0.013-0.014c0.202-0.26,0.465-0.467,0.766-0.601 c0.354-0.194,0.689-0.421,1.002-0.676c0.501-0.381,0.801-0.636,1.002-0.751c0.396-0.2,0.601-0.341,0.601-0.426 c0.004-0.018,0.004-0.037,0-0.055c-0.247-0.407-0.63-0.712-1.082-0.862c-0.446-0.125-0.902-0.26-1.357-0.401 c-0.456-0.114-0.869-0.355-1.192-0.696c-0.01-0.031-0.01-0.064,0-0.095c0.016-0.142,0.086-0.273,0.195-0.366 c0.09-0.112,0.222-0.182,0.366-0.195c0.073-0.01,0.147-0.01,0.22,0c0.268,0.015,0.532,0.079,0.776,0.19l0.726,0.316 M13.465,32.28 c0.181-0.003,0.358,0.055,0.501,0.165c0.12,0.092,0.192,0.234,0.195,0.386c0.001,0.108-0.043,0.211-0.12,0.286 c-0.54,0.476-1.173,0.836-1.858,1.057c-0.69,0.22-1.3,0.638-1.753,1.202c0.646,0.375,1.316,0.71,2.004,1.002l2.074,0.912 c0.161,0.064,0.263,0.223,0.255,0.396c0.03,0.235-0.072,0.468-0.265,0.606c-0.19,0.157-0.43,0.242-0.676,0.24 c-0.1,0-0.199-0.02-0.291-0.06c-0.141-0.138-0.292-0.265-0.451-0.381c-1.202-0.668-2.488-1.292-3.857-1.873 c-0.135-0.055-0.275-0.11-0.411-0.155c-0.151-0.061-0.263-0.192-0.301-0.351c0.006-0.42,0.188-0.817,0.501-1.097 c0.644-0.469,1.342-0.859,2.079-1.162c0.743-0.297,1.444-0.692,2.084-1.172H13.465z"
+                  ></path>
+                  <path
+                    fill="#5d4037"
+                    d="M22.051,32.24c-0.171-0.265-0.384-0.5-0.631-0.696c-0.198-0.138-0.435-0.21-0.676-0.205 c-0.081-0.002-0.161,0.013-0.235,0.045l-1.503,0.501c-0.096,0.03-0.195,0.043-0.296,0.04c-0.178,0.013-0.355-0.037-0.501-0.14 c-0.182-0.158-0.336-0.346-0.456-0.556l-0.416,0.281c0.176,0.295,0.403,0.556,0.671,0.771c0.211,0.132,0.457,0.197,0.706,0.185 c0.127-0.001,0.254-0.02,0.376-0.055l1.388-0.501c0.094-0.036,0.194-0.055,0.296-0.055c0.152-0.01,0.304,0.031,0.431,0.115 c0.175,0.143,0.327,0.312,0.451,0.501l0.396-0.22"
+                  ></path>
+                  <path
+                    fill="#5d4037"
+                    fill-rule="evenodd"
+                    d="M32.289,40.61c0.761,4.558-4.809,5.009-7.098,2.95 c-1.583-1.413-1.137-3.381,1.132-3.256C28.327,40.41,29.494,42.984,32.289,40.61"
+                    clip-rule="evenodd"
+                  ></path>
+                  <path
+                    fill="#5d4037"
+                    fill-rule="evenodd"
+                    d="M15.364,40.61c-0.761,4.558,4.809,5.009,7.098,2.95 c1.583-1.413,1.137-3.381-1.132-3.256C19.326,40.41,18.159,42.984,15.364,40.61"
+                    clip-rule="evenodd"
+                  ></path>
+                  <path
+                    fill="#5d4037"
+                    d="M20.839,33.998c-0.279-0.184-0.608-0.276-0.942-0.265c-0.404-0.015-0.798,0.129-1.097,0.401 c-0.338,0.332-0.482,0.814-0.381,1.277c0.049,0.436,0.223,0.848,0.501,1.187c0.236,0.316,0.607,0.502,1.002,0.501 c0.258-0.004,0.511-0.073,0.736-0.2c0.451-0.27,0.671-0.781,0.671-1.548C21.387,34.848,21.206,34.347,20.839,33.998z M19.877,35.811c-0.277,0-0.501-0.224-0.501-0.501s0.224-0.501,0.501-0.501s0.501,0.224,0.501,0.501S20.154,35.811,19.877,35.811z"
+                  ></path>
+                  <path
+                    fill="#5d4037"
+                    d="M24.195,39.914c0.139,0.001,0.276-0.025,0.406-0.075c0.124-0.048,0.242-0.112,0.351-0.19 c0.102-0.082,0.198-0.173,0.286-0.27c0.083-0.093,0.156-0.194,0.22-0.301c0.061-0.094,0.115-0.193,0.16-0.296 c0.035-0.074,0.064-0.151,0.085-0.23v-0.045c-0.01-0.014-0.019-0.029-0.025-0.045l0,0c-0.13,0.2-0.293,0.378-0.481,0.526 c-0.144,0.136-0.314,0.24-0.501,0.306c-0.188,0.065-0.387,0.097-0.586,0.095c-0.17,0.003-0.339-0.021-0.501-0.07 c-0.139-0.044-0.269-0.112-0.386-0.2c-0.117-0.094-0.223-0.202-0.316-0.321c-0.097-0.13-0.18-0.269-0.25-0.416l0,0 c-0.011,0.011-0.02,0.025-0.025,0.04c0,0,0,0.03,0,0.04c0.068,0.192,0.156,0.376,0.26,0.551c0.094,0.168,0.212,0.322,0.351,0.456 c0.124,0.13,0.27,0.236,0.431,0.316c0.159,0.067,0.329,0.104,0.501,0.11"
+                  ></path>
+                  <path
+                    fill="#5d4037"
+                    d="M28.613,33.968c-0.278-0.185-0.607-0.28-0.942-0.27c-0.405-0.014-0.799,0.132-1.097,0.406 c-0.336,0.333-0.478,0.815-0.376,1.277c0.046,0.436,0.22,0.85,0.501,1.187c0.236,0.315,0.608,0.501,1.002,0.501 c0.258-0.004,0.512-0.073,0.736-0.2c0.493-0.352,0.752-0.947,0.676-1.548C29.089,34.644,28.928,34.188,28.613,33.968z M27.511,35.867c-0.277,0-0.501-0.224-0.501-0.501s0.224-0.501,0.501-0.501s0.501,0.224,0.501,0.501S27.787,35.867,27.511,35.867z"
+                  ></path>
+                  <radialGradient
+                    id="wjR_Oe2ayoe3fGfJhyhbca_LnZMjt9rZC3d_gr1"
+                    cx="20.66"
+                    cy="13.128"
+                    r="18.437"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#fafafb"></stop>
+                    <stop offset=".293" stop-color="#f6f7f8"></stop>
+                    <stop offset=".566" stop-color="#ebecee"></stop>
+                    <stop offset=".832" stop-color="#d8dcdf"></stop>
+                    <stop offset="1" stop-color="#c8cdd1"></stop>
+                  </radialGradient>
+                  <path
+                    fill="url(#wjR_Oe2ayoe3fGfJhyhbca_LnZMjt9rZC3d_gr1)"
+                    d="M38.519,9.951c-0.113-0.175-0.224-0.354-0.339-0.518c-0.092-0.132-0.186-0.252-0.279-0.377	c-0.137-0.184-0.275-0.367-0.414-0.537c-0.083-0.102-0.167-0.196-0.251-0.293c-0.155-0.178-0.309-0.351-0.465-0.513	C36.7,7.64,36.63,7.57,36.559,7.5c-0.181-0.18-0.363-0.35-0.546-0.51c-0.043-0.037-0.085-0.075-0.128-0.111	c-2.281-1.946-4.592-2.44-6.076-2.765l-0.821-0.185c-3.005-0.576-5.53-0.867-8.09-0.501c-1.008,0.219-1.982,0.573-2.895,1.052	c-1.257,0.571-2.565,1.162-3.827,1.252c-1.321,0.341-2.468,1.162-3.216,2.304l-0.14,0.2c-0.671,1.403-0.847,2.992-0.501,4.508	c0.276,0.902,0.616,1.783,0.937,2.63c0.736,1.727,1.269,3.534,1.588,5.385c0.332,0.658,0.591,1.35,0.771,2.064	c0.426,1.483,0.912,3.151,2.229,4.448h0.035c0.011-0.005,0.022-0.009,0.033-0.014c0.003,0.003,0.005,0.006,0.008,0.009	c1.14-0.54,2.24-0.902,3.307-1.124c0.15-0.031,0.298-0.053,0.446-0.078c0.18-0.031,0.36-0.063,0.538-0.087	c0.289-0.037,0.576-0.064,0.861-0.081c0.025-0.002,0.05-0.005,0.075-0.006c3.649-0.2,6.912,1.133,10.1,2.433l0.575,0.238	c0.018-0.008,0.035-0.029,0.053-0.039c0.01,0.004,0.019,0.008,0.029,0.012c0.781-0.341,1.177-2.965,1.703-5.41	c1.893-4.333,6.126-7.514,5.871-11.521C39.169,10.996,38.846,10.459,38.519,9.951z"
+                  ></path>
+                  <radialGradient
+                    id="wjR_Oe2ayoe3fGfJhyhbcb_LnZMjt9rZC3d_gr2"
+                    cx="11.72"
+                    cy="7.271"
+                    r=".104"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#fafafb"></stop>
+                    <stop offset=".293" stop-color="#f6f7f8"></stop>
+                    <stop offset=".566" stop-color="#ebecee"></stop>
+                    <stop offset=".832" stop-color="#d8dcdf"></stop>
+                    <stop offset="1" stop-color="#c8cdd1"></stop>
+                  </radialGradient>
+                  <path
+                    fill="url(#wjR_Oe2ayoe3fGfJhyhbcb_LnZMjt9rZC3d_gr2)"
+                    d="M11.824,7.213c-0.052,0.051-0.112,0.094-0.162,0.148C11.712,7.307,11.772,7.264,11.824,7.213z"
+                  ></path>
+                  <radialGradient
+                    id="wjR_Oe2ayoe3fGfJhyhbcc_LnZMjt9rZC3d_gr3"
+                    cx="11.041"
+                    cy="8.123"
+                    r=".101"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#fafafb"></stop>
+                    <stop offset=".293" stop-color="#f6f7f8"></stop>
+                    <stop offset=".566" stop-color="#ebecee"></stop>
+                    <stop offset=".832" stop-color="#d8dcdf"></stop>
+                    <stop offset="1" stop-color="#c8cdd1"></stop>
+                  </radialGradient>
+                  <path
+                    fill="url(#wjR_Oe2ayoe3fGfJhyhbcc_LnZMjt9rZC3d_gr3)"
+                    d="M11.122,8.056c-0.04,0.059-0.089,0.11-0.127,0.171l0.061-0.086	C11.076,8.111,11.102,8.086,11.122,8.056z"
+                  ></path>
+                  <radialGradient
+                    id="wjR_Oe2ayoe3fGfJhyhbcd_LnZMjt9rZC3d_gr4"
+                    cx="31.824"
+                    cy="28.562"
+                    r=".004"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#fafafb"></stop>
+                    <stop offset=".293" stop-color="#f6f7f8"></stop>
+                    <stop offset=".566" stop-color="#ebecee"></stop>
+                    <stop offset=".832" stop-color="#d8dcdf"></stop>
+                    <stop offset="1" stop-color="#c8cdd1"></stop>
+                  </radialGradient>
+                  <polygon
+                    fill="url(#wjR_Oe2ayoe3fGfJhyhbcd_LnZMjt9rZC3d_gr4)"
+                    points="31.829,28.563 31.822,28.561 31.819,28.563"
+                  ></polygon>
+                  <linearGradient
+                    id="wjR_Oe2ayoe3fGfJhyhbce_LnZMjt9rZC3d_gr5"
+                    x1="16.012"
+                    x2="29.033"
+                    y1="26.093"
+                    y2="26.476"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#f44f5a"></stop>
+                    <stop offset=".443" stop-color="#ee3d4a"></stop>
+                    <stop offset="1" stop-color="#e52030"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#wjR_Oe2ayoe3fGfJhyhbce_LnZMjt9rZC3d_gr5)"
+                    d="M31.473,26.384c-0.007-0.089-0.044-0.18-0.071-0.27c0-0.001-0.001-0.003-0.001-0.004	c-0.337-1.099-2.136-2.252-4.586-2.876c-0.135-0.036-0.273-0.053-0.409-0.084c-0.006-0.001-0.012-0.002-0.018-0.004	c-0.585-0.134-1.176-0.224-1.771-0.277c-0.036-0.003-0.072-0.007-0.108-0.01c-0.338-0.027-0.675-0.044-1.014-0.044	c-0.298-0.002-0.597,0.003-0.895,0.023c-0.133,0.009-0.265,0.022-0.397,0.035c-0.311,0.031-0.62,0.073-0.926,0.13	c-0.107,0.018-0.215,0.024-0.322,0.045c-2.018,0.371-3.797,1.551-4.924,3.266l0.065,2.65v0.04h0.03	c1.741-0.997,3.667-1.628,5.66-1.853c3.171-0.286,6.417,0.681,9.587,2.895h0.03v-0.05C31.616,28.803,31.64,27.584,31.473,26.384z"
+                  ></path>
+                  <path
+                    fill="#f9f9fa"
+                    fill-rule="evenodd"
+                    d="M12.975,7.881c-0.341,1.733,1.202,7.203,0.701,10.073	c-0.26-1.503-1.222-4.508-1.182-6.176c-0.461-1.002-0.927-2.229-1.438-2.7S12.113,6.158,13,7.881"
+                    clip-rule="evenodd"
+                  ></path>
+                  <path
+                    fill="#c1cbd7"
+                    d="M16.476,25.493L16.476,25.493c-2.004-2.364-2.855-6.437-3.556-9.868	c-0.556-2.725-1.032-5.049-1.949-5.78l0,0c-0.109-0.148-0.182-0.319-0.21-0.501c-0.032-0.347,0.039-0.696,0.205-1.002	C11.124,8,11.367,7.705,11.672,7.485c0.193-0.133,0.414-0.218,0.646-0.25V7.28c-0.231,0.032-0.45,0.117-0.641,0.25	c-0.202,0.253-0.383,0.523-0.541,0.806c-0.451,0.902,0.501,0.857,0.857,1.347c0.927,0.746,1.002,3.196,1.563,5.931	c0.701,3.426,0.932,7.489,2.94,9.843l0,0l0,0l-0.03,0.035"
+                  ></path>
+                  <path
+                    fill="#f9f9fa"
+                    fill-rule="evenodd"
+                    d="M16.401,7.175c-0.346,1.728,0.536,5.705,0,8.58	c-0.26-1.503-1.222-4.508-1.182-6.171c-0.466-1.002-1.002-2.164-1.347-2.76s1.237-1.257,2.505,0.351"
+                    clip-rule="evenodd"
+                  ></path>
+                  <path
+                    fill="#c1cbd7"
+                    d="M15.73,6.564c-0.278-0.233-0.65-0.318-1.002-0.23c-0.138,0.015-0.27,0.063-0.386,0.14	c-0.102,0.067-0.171,0.175-0.19,0.296c0,0.18-0.14,0.21,0,0.546l0,0c1.122,1.503,2.004,4.042,2.214,6.722	c0.301,3.401-0.095,7.168,2.159,9.838l-0.035,0.03c-2.264-2.685-2.6-6.457-2.895-9.863c-0.24-2.675-0.456-5.129-1.568-6.637l0,0	c-0.189-0.211-0.285-0.489-0.265-0.771c0.022-0.132,0.096-0.249,0.205-0.326c0.123-0.086,0.266-0.138,0.416-0.15	c0.479-0.038,0.956,0.093,1.347,0.371l-0.03,0.035"
+                  ></path>
+                  <path
+                    fill="#f9f9fa"
+                    d="M21.911,4.129c1.042,1.738-0.872,9.562-1.222,14.476c-0.03,0.416-3.697-16.224,1.212-14.476"
+                  ></path>
+                  <path
+                    fill="#c1cbd7"
+                    d="M21.475,22.943c-1.475-4.089-2.37-8.365-2.66-12.703c-0.113-1.435,0.002-2.879,0.341-4.278	c0.326-1.112,0.897-1.843,1.783-1.974c0.324-0.042,0.652-0.018,0.967,0.07v0.045c-0.319-0.059-0.647-0.049-0.962,0.03	c-0.741,0.17-0.651,0.631-1.137,1.678c-0.379,1.346-0.502,2.751-0.361,4.142c0.631,4.127,1.408,9.758,2.079,12.958H21.49"
+                  ></path>
+                  <path
+                    fill="#c1cbd7"
+                    d="M24.931,22.678c-0.05-0.336-0.095-0.676-0.145-1.002c-0.771-5.59-1.718-12.402,1.598-17.296	h0.04c-1.357,3.622-1.543,10.519-1.703,12.743c-0.07,0.962,0.04,3.005,0.115,4.508c0.045,0.346,0.1,0.686,0.145,1.027h-0.05"
+                  ></path>
+                  <path
+                    fill="#c1cbd7"
+                    d="M28.528,23.394c0.115-2.885,0.421-6.261,0.701-9.187c0.696-3.687,2.57-5.43,3.061-9.157	V5.006c-1.69,2.827-2.813,5.956-3.306,9.212c-0.457,3.036-0.597,6.112-0.416,9.177h-0.05"
+                  ></path>
+                  <g>
+                    <path
+                      fill="#c1cbd7"
+                      d="M37.218,9.429c-1.503,4.628-3.276,9.152-5.079,13.73C32.189,17.098,35.435,9.804,37.218,9.429"
+                    ></path>
+                    <path
+                      fill="#c1cbd7"
+                      d="M31.258,25.197c0.791-0.821,0.847-2.084,0.917-3.551c-0.017-1.501,0.251-2.992,0.791-4.393 c0-0.06,0.045-0.155,0.08-0.286c0.441-1.528,2.199-7.684,4.248-7.574v0.045c-1.608-0.06-3.657,6.011-4.142,7.549 c-0.035,0.125-0.045,0.205-0.065,0.27l0,0c-0.576,1.503-0.611,3.005-0.801,4.378c-0.065,1.473-0.19,2.745-1.002,3.576h-0.03"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a
+                class="hover:scale-125 transition-all duration-1000 text-gray-900 text-2xl hover:text-pink-500"
+                href="https://www.geeksforgeeks.org/user/visheshj5s5g/"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#43a047"
+                    d="M29.035,24C29.014,23.671,29,23.339,29,23c0-6.08,2.86-10,7-10c3.411,0,6.33,2.662,7,7l2,0l0.001-9	L43,11c0,0-0.533,1.506-1,1.16c-1.899-1.066-3.723-1.132-6.024-1.132C30.176,11.028,25,16.26,25,22.92	c0,0.364,0.021,0.723,0.049,1.08h-2.099C22.979,23.643,23,23.284,23,22.92c0-6.66-5.176-11.892-10.976-11.892	c-2.301,0-4.125,0.065-6.024,1.132C5.533,12.506,5,11,5,11l-2.001,0L3,20l2,0c0.67-4.338,3.589-7,7-7c4.14,0,7,3.92,7,10	c0,0.339-0.014,0.671-0.035,1H0v2h1.009c1.083,0,1.977,0.861,1.999,1.943C3.046,29.789,3.224,32.006,4,33c1.269,1.625,3,3,8,3	c5.022,0,9.92-4.527,11-10h2c1.08,5.473,5.978,10,11,10c5,0,6.731-1.375,8-3c0.776-0.994,0.954-3.211,0.992-5.057	C45.014,26.861,45.909,26,46.991,26H48v-2H29.035z M11.477,33.73C9.872,33.73,7.322,33.724,7,32	c-0.109-0.583-0.091-2.527-0.057-4.046C6.968,26.867,7.855,26,8.943,26H19C18.206,30.781,15.015,33.73,11.477,33.73z M41,32	c-0.322,1.724-2.872,1.73-4.477,1.73c-3.537,0-6.729-2.949-7.523-7.73h10.057c1.088,0,1.975,0.867,2,1.954	C41.091,29.473,41.109,31.417,41,32z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="hover:scale-125 transition-all duration-1000 text-gray-900 text-2xl hover:text-pink-500"
+                href="https://www.hackerrank.com/profile/visheshjindal04"
+                target="_blank"
+              >
+                <svg
+                  width="48"
+                  height="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="-1 -1 582 486.999"
+                >
+                  <path d="M-1-1h582v402H-1z" fill="none" />
+                  <path
+                    d="M454.843 141.001c-13.019-22.417-172.832-115-198.859-115-26.019 0-185.895 92.351-198.84 115-12.947 22.649-13.019 207.358 0 230.009 13.018 22.639 172.839 114.989 198.84 114.989 26 0 185.841-92.466 198.851-114.999 13.007-22.533 13.016-207.583.008-229.999zM309.862 398.15c-3.559 0-36.756-32.137-34.141-34.762.781-.78 5.625-1.328 15.768-1.644 0-23.564.53-61.622.844-77.553.038-1.814-.395-3.081-.395-5.256h-71.812c0 6.379-.412 32.523 1.232 65.479.205 4.078-1.42 5.353-5.158 5.335-9.102-.025-18.211-.099-27.321-.071-3.683.009-5.274-1.374-5.157-5.488.826-30.043 2.66-75.488-.134-191.07v-2.849c-8.688-.314-14.717-.862-15.508-1.652-2.624-2.624 31.032-34.76 34.581-34.76 3.558 0 36.989 32.145 34.383 34.76-.782.781-7.098 1.338-15.067 1.652v2.84c-2.174 23.135-1.823 71.506-2.362 94.686h72.107c0-4.089.351-31.212-1.077-75.145-.091-3.047.853-4.646 3.781-4.672 9.945-.072 19.9-.117 29.855-.055 3.108.019 4.105 1.546 4.043 4.834-3.28 171.861-.594 159.867-.594 188.975 7.97.315 15.112.864 15.895 1.655 2.588 2.615-30.205 34.761-33.763 34.761z"
+                    fill="#2ec866"
+                  />
+                </svg>
+              </a>
+              <a
+                class="hover:scale-125 transition-all duration-1000 text-gray-900 text-2xl hover:text-pink-500"
+                href="https://www.hackerrank.com/profile/visheshjindal04"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  enable-background="new 0 0 24 24"
+                  viewBox="0 0 24 24"
+                  id="code-forces"
+                >
+                  <path
+                    fill="#2196F3"
+                    d="M13.5,21c0.828,0,1.5-0.672,1.5-1.5v-15C15,3.672,14.328,3,13.5,3h-3C9.673,3,9,3.672,9,4.5v15c0,0.828,0.673,1.5,1.5,1.5H13.5L13.5,21z"
+                  ></path>
+                  <path
+                    fill="#1D83D4"
+                    d="M12,3h-1.5C9.673,3,9,3.672,9,4.5v15c0,0.828,0.673,1.5,1.5,1.5H12V3L12,3z"
+                  ></path>
+                  <path
+                    fill="#FFC107"
+                    d="M0,19.5C0,20.328,0.673,21,1.5,21h3C5.328,21,6,20.328,6,19.5V9c0-0.828-0.672-1.5-1.5-1.5h-3C0.673,7.5,0,8.172,0,9V19.5L0,19.5z"
+                  ></path>
+                  <path
+                    fill="#DEA806"
+                    d="M3.25,7.5H1.5C0.673,7.5,0,8.172,0,9v10.5C0,20.328,0.673,21,1.5,21h1.75V7.5L3.25,7.5z"
+                  ></path>
+                  <path
+                    fill="#F44336"
+                    d="M24,19.5V12c0-0.828-0.672-1.5-1.5-1.5h-3c-0.828,0-1.5,0.672-1.5,1.5v7.5c0,0.828,0.672,1.5,1.5,1.5h3C23.328,21,24,20.328,24,19.5L24,19.5z"
+                  ></path>
+                  <path
+                    fill="#D43A2F"
+                    d="M21,10.5h-1.5c-0.828,0-1.5,0.672-1.5,1.5v7.5c0,0.828,0.672,1.5,1.5,1.5H21V10.5L21,10.5z"
+                  ></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </span>
       </div>
-      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+    </section>
+    <section id="skills" class="text-gray-600 body-font">
+      <div class="container px-5 py-16 mx-auto border-t border-gray-200">
+        <div class="text-center mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4"
+          >
+            Skills
+          </h1>
+        </div>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <!-- Java -->
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="rounded flex p-4 h-full items-center">
+              <span class="title-font font-medium w-1/4"
+                ><i class="fa-brands fa-java"></i> Java</span
+              >
+              <div
+                class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
+              <span class="ml-4">80%</span>
+            </div>
+          </div>
 
-        <!-- Java -->
-        <div class="p-2 sm:w-1/2 w-full">
-          <div class="rounded flex p-4 h-full items-center">
-            <span class="title-font font-medium w-1/4"><i class="fa-brands fa-java"></i> Java</span>
-            <div class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4">
-              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+          <!-- React.js -->
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="rounded flex p-4 h-full items-center">
+              <span class="title-font font-medium w-1/4"
+                ><i class="fa-brands fa-react"></i> React.js</span
+              >
+              <div
+                class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 50%"
+                ></div>
+              </div>
+              <span class="ml-4">50%</span>
             </div>
-            <span class="ml-4">80%</span>
           </div>
-        </div>
 
-        <!-- React.js -->
-        <div class="p-2 sm:w-1/2 w-full">
-          <div class="rounded flex p-4 h-full items-center">
+          <!-- HTML & CSS -->
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="rounded flex p-4 h-full items-center">
+              <span class="title-font font-medium w-1/4"
+                ><i class="fa-brands fa-html5"></i> HTML & <br />
+                <i class="fa-brands fa-css3-alt"></i> CSS</span
+              >
+              <div
+                class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 95%"
+                ></div>
+              </div>
+              <span class="ml-4">95%</span>
+            </div>
+          </div>
 
-            <span class="title-font font-medium w-1/4"><i class="fa-brands fa-react"></i> React.js</span>
-            <div class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4">
-              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+          <!-- Tailwind -->
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="rounded flex p-4 h-full items-center">
+              <span class="title-font font-medium w-1/4"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  id="tailwind-css"
+                >
+                  <path
+                    d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z"
+                  ></path>
+                </svg>
+                Tailwind</span
+              >
+              <div
+                class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+              <span class="ml-4">90%</span>
             </div>
-            <span class="ml-4">50%</span>
           </div>
-        </div>
 
-        <!-- HTML & CSS -->
-        <div class="p-2 sm:w-1/2 w-full">
-          <div class="rounded flex p-4 h-full items-center">
+          <!-- Spring Boot -->
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="rounded flex p-4 h-full items-center">
+              <span class="title-font font-medium w-1/4"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M29.094 1.661c-0.448 1.078-1.021 2.094-1.708 3.031-3.010-3.005-7.089-4.693-11.344-4.693-8.802 0-16.042 7.24-16.042 16.042 0 4.391 1.802 8.594 4.984 11.62l0.589 0.526c2.896 2.438 6.552 3.771 10.333 3.776 8.37 0 15.401-6.552 16-14.896 0.438-4.089-0.766-9.255-2.813-15.401zM7.26 27.755c-0.255 0.323-0.651 0.505-1.063 0.505-0.76 0-1.37-0.615-1.375-1.37 0-0.755 0.625-1.375 1.375-1.375 1.151 0.005 1.792 1.344 1.063 2.24zM29.031 22.953c-3.958 5.271-12.417 3.495-17.833 3.75 0 0-0.964 0.057-1.932 0.214 0 0 0.365-0.151 0.833-0.333 3.807-1.323 5.604-1.578 7.917-2.766 4.354-2.214 8.661-7.057 9.557-12.094-1.661 4.849-6.688 9.010-11.266 10.703-3.135 1.156-8.802 2.281-8.802 2.281l-0.229-0.12c-3.859-1.875-3.974-10.229 3.036-12.927 3.068-1.177 6.010-0.531 9.323-1.318 3.542-0.844 7.641-3.5 9.307-6.964 1.865 5.542 4.109 14.214 0.089 19.573z"
+                  /></svg
+                >Spring Boot</span
+              >
+              <div
+                class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 60%"
+                ></div>
+              </div>
+              <span class="ml-4">60%</span>
+            </div>
+          </div>
 
-            <span class="title-font font-medium w-1/4"><i class="fa-brands fa-html5"></i> HTML & <br> <i
-                class="fa-brands fa-css3-alt"></i> CSS</span>
-            <div class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4">
-              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 95%"></div>
+          <!-- DSA -->
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="rounded flex p-4 h-full items-center">
+              <span class="title-font font-medium w-1/4">DSA</span>
+              <div
+                class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 70%"
+                ></div>
+              </div>
+              <span class="ml-4">70%</span>
             </div>
-            <span class="ml-4">95%</span>
           </div>
-        </div>
 
-        <!-- Tailwind -->
-        <div class="p-2 sm:w-1/2 w-full">
-          <div class="rounded flex p-4 h-full items-center">
-            <span class="title-font font-medium w-1/4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                id="tailwind-css">
-                <path
-                  d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z">
-                </path>
-              </svg> Tailwind</span>
-            <div class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4">
-              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+          <!-- Git/Github  -->
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="rounded flex p-4 h-full items-center">
+              <span class="title-font font-medium w-1/4"
+                ><i class="fa-brands fa-github"></i> Git/Github</span
+              >
+              <div
+                class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 85%"
+                ></div>
+              </div>
+              <span class="ml-4">85%</span>
             </div>
-            <span class="ml-4">90%</span>
           </div>
-        </div>
 
-        <!-- Spring Boot -->
-        <div class="p-2 sm:w-1/2 w-full">
-          <div class="rounded flex p-4 h-full items-center">
-            <span class="title-font font-medium w-1/4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                viewBox="0 0 32 32">
-                <path
-                  d="M29.094 1.661c-0.448 1.078-1.021 2.094-1.708 3.031-3.010-3.005-7.089-4.693-11.344-4.693-8.802 0-16.042 7.24-16.042 16.042 0 4.391 1.802 8.594 4.984 11.62l0.589 0.526c2.896 2.438 6.552 3.771 10.333 3.776 8.37 0 15.401-6.552 16-14.896 0.438-4.089-0.766-9.255-2.813-15.401zM7.26 27.755c-0.255 0.323-0.651 0.505-1.063 0.505-0.76 0-1.37-0.615-1.375-1.37 0-0.755 0.625-1.375 1.375-1.375 1.151 0.005 1.792 1.344 1.063 2.24zM29.031 22.953c-3.958 5.271-12.417 3.495-17.833 3.75 0 0-0.964 0.057-1.932 0.214 0 0 0.365-0.151 0.833-0.333 3.807-1.323 5.604-1.578 7.917-2.766 4.354-2.214 8.661-7.057 9.557-12.094-1.661 4.849-6.688 9.010-11.266 10.703-3.135 1.156-8.802 2.281-8.802 2.281l-0.229-0.12c-3.859-1.875-3.974-10.229 3.036-12.927 3.068-1.177 6.010-0.531 9.323-1.318 3.542-0.844 7.641-3.5 9.307-6.964 1.865 5.542 4.109 14.214 0.089 19.573z" />
-              </svg>Spring Boot</span>
-            <div class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4">
-              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
-            </div>
-            <span class="ml-4">60%</span>
-          </div>
-        </div>
-
-        <!-- DSA -->
-        <div class="p-2 sm:w-1/2 w-full">
-          <div class="rounded flex p-4 h-full items-center">
-            <span class="title-font font-medium w-1/4">DSA</span>
-            <div class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4">
-              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
-            </div>
-            <span class="ml-4">70%</span>
-          </div>
-        </div>
-
-        <!-- Git/Github  -->
-        <div class="p-2 sm:w-1/2 w-full">
-          <div class="rounded flex p-4 h-full items-center">
-            <span class="title-font font-medium w-1/4"><i class="fa-brands fa-github"></i> Git/Github</span>
-            <div class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4">
-              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
-            </div>
-            <span class="ml-4">85%</span>
-          </div>
-        </div>
-
-        <!-- Cloud Computing  -->
-        <div class="p-2 sm:w-1/2 w-full">
-          <div class="rounded flex p-4 h-full items-center">
-            <span class="title-font font-medium w-1/4"><i class="fa-solid fa-cloud"></i> Cloud Computing</span>
-            <div class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4">
-              <div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
-            </div>
-            <span class="ml-4">40%</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="Coding">
-    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-        Coding Profiles
-      </h1>
-      <span class="inline-flex">
-        <div class="flex justify-center py-10">
-          <span class="inline-flex space-x-6">
-            <a class="text-gray-900 text-2xl hover:text-blue-600" href="https://leetcode.com/u/vishesh-04/"
-              target="_blank">
-              <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="leetcode">
-                <path fill="#B3B1B0"
-                  d="M22 14.355c0-.742-.564-1.346-1.26-1.346H10.676c-.696 0-1.26.604-1.26 1.346s.563 1.346 1.26 1.346H20.74c.696.001 1.26-.603 1.26-1.346z">
-                </path>
-                <path fill="#E7A41F"
-                  d="m3.482 18.187 4.313 4.361c.973.979 2.318 1.452 3.803 1.452 1.485 0 2.83-.512 3.805-1.494l2.588-2.637c.51-.514.492-1.365-.039-1.9-.531-.535-1.375-.553-1.884-.039l-2.676 2.607c-.462.467-1.102.662-1.809.662s-1.346-.195-1.81-.662l-4.298-4.363c-.463-.467-.696-1.15-.696-1.863 0-.713.233-1.357.696-1.824l4.285-4.38c.463-.467 1.116-.645 1.822-.645s1.346.195 1.809.662l2.676 2.606c.51.515 1.354.497 1.885-.038.531-.536.549-1.387.039-1.901l-2.588-2.636a4.994 4.994 0 0 0-2.392-1.33l-.034-.007 2.447-2.503c.512-.514.494-1.366-.037-1.901-.531-.535-1.376-.552-1.887-.038l-10.018 10.1C2.509 11.458 2 12.813 2 14.311c0 1.498.509 2.896 1.482 3.876z">
-                </path>
-                <path fill="#070706"
-                  d="M8.115 22.814a2.109 2.109 0 0 1-.474-.361c-1.327-1.333-2.66-2.66-3.984-3.997-1.989-2.008-2.302-4.937-.786-7.32a6 6 0 0 1 .839-1.004L13.333.489c.625-.626 1.498-.652 2.079-.067.56.563.527 1.455-.078 2.066-.769.776-1.539 1.55-2.309 2.325-.041.122-.14.2-.225.287-.863.876-1.75 1.729-2.601 2.618-.111.116-.262.186-.372.305-1.423 1.423-2.863 2.83-4.266 4.272-1.135 1.167-1.097 2.938.068 4.127 1.308 1.336 2.639 2.65 3.961 3.974.067.067.136.132.204.198.468.303.474 1.25.183 1.671-.321.465-.74.75-1.333.728-.199-.006-.363-.086-.529-.179z">
-                </path>
-              </svg>
-
-
-            </a>
-            <a class="text-gray-900 text-2xl hover:text-gray-800" href="https://www.codechef.com/users/vishesh_04"
-              target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                <path fill="#5d4037"
-                  d="M34.809,32.711L34.809,32.711c1.016,0.306,1.952,0.833,2.74,1.543 c0.133,0.085,0.219,0.228,0.23,0.386c0,0.235-0.175,0.466-0.536,0.686c-0.648,0.434-1.273,0.9-1.873,1.398 c-0.592,0.483-1.212,0.93-1.858,1.337c-0.083,0.044-0.176,0.068-0.27,0.07c-0.132,0.002-0.26-0.048-0.356-0.14 c-0.184-0.16-0.203-0.438-0.043-0.622c0.004-0.005,0.009-0.01,0.013-0.014c0.202-0.26,0.465-0.467,0.766-0.601 c0.354-0.194,0.689-0.421,1.002-0.676c0.501-0.381,0.801-0.636,1.002-0.751c0.396-0.2,0.601-0.341,0.601-0.426 c0.004-0.018,0.004-0.037,0-0.055c-0.247-0.407-0.63-0.712-1.082-0.862c-0.446-0.125-0.902-0.26-1.357-0.401 c-0.456-0.114-0.869-0.355-1.192-0.696c-0.01-0.031-0.01-0.064,0-0.095c0.016-0.142,0.086-0.273,0.195-0.366 c0.09-0.112,0.222-0.182,0.366-0.195c0.073-0.01,0.147-0.01,0.22,0c0.268,0.015,0.532,0.079,0.776,0.19l0.726,0.316 M13.465,32.28 c0.181-0.003,0.358,0.055,0.501,0.165c0.12,0.092,0.192,0.234,0.195,0.386c0.001,0.108-0.043,0.211-0.12,0.286 c-0.54,0.476-1.173,0.836-1.858,1.057c-0.69,0.22-1.3,0.638-1.753,1.202c0.646,0.375,1.316,0.71,2.004,1.002l2.074,0.912 c0.161,0.064,0.263,0.223,0.255,0.396c0.03,0.235-0.072,0.468-0.265,0.606c-0.19,0.157-0.43,0.242-0.676,0.24 c-0.1,0-0.199-0.02-0.291-0.06c-0.141-0.138-0.292-0.265-0.451-0.381c-1.202-0.668-2.488-1.292-3.857-1.873 c-0.135-0.055-0.275-0.11-0.411-0.155c-0.151-0.061-0.263-0.192-0.301-0.351c0.006-0.42,0.188-0.817,0.501-1.097 c0.644-0.469,1.342-0.859,2.079-1.162c0.743-0.297,1.444-0.692,2.084-1.172H13.465z">
-                </path>
-                <path fill="#5d4037"
-                  d="M22.051,32.24c-0.171-0.265-0.384-0.5-0.631-0.696c-0.198-0.138-0.435-0.21-0.676-0.205 c-0.081-0.002-0.161,0.013-0.235,0.045l-1.503,0.501c-0.096,0.03-0.195,0.043-0.296,0.04c-0.178,0.013-0.355-0.037-0.501-0.14 c-0.182-0.158-0.336-0.346-0.456-0.556l-0.416,0.281c0.176,0.295,0.403,0.556,0.671,0.771c0.211,0.132,0.457,0.197,0.706,0.185 c0.127-0.001,0.254-0.02,0.376-0.055l1.388-0.501c0.094-0.036,0.194-0.055,0.296-0.055c0.152-0.01,0.304,0.031,0.431,0.115 c0.175,0.143,0.327,0.312,0.451,0.501l0.396-0.22">
-                </path>
-                <path fill="#5d4037" fill-rule="evenodd"
-                  d="M32.289,40.61c0.761,4.558-4.809,5.009-7.098,2.95 c-1.583-1.413-1.137-3.381,1.132-3.256C28.327,40.41,29.494,42.984,32.289,40.61"
-                  clip-rule="evenodd"></path>
-                <path fill="#5d4037" fill-rule="evenodd"
-                  d="M15.364,40.61c-0.761,4.558,4.809,5.009,7.098,2.95 c1.583-1.413,1.137-3.381-1.132-3.256C19.326,40.41,18.159,42.984,15.364,40.61"
-                  clip-rule="evenodd"></path>
-                <path fill="#5d4037"
-                  d="M20.839,33.998c-0.279-0.184-0.608-0.276-0.942-0.265c-0.404-0.015-0.798,0.129-1.097,0.401 c-0.338,0.332-0.482,0.814-0.381,1.277c0.049,0.436,0.223,0.848,0.501,1.187c0.236,0.316,0.607,0.502,1.002,0.501 c0.258-0.004,0.511-0.073,0.736-0.2c0.451-0.27,0.671-0.781,0.671-1.548C21.387,34.848,21.206,34.347,20.839,33.998z M19.877,35.811c-0.277,0-0.501-0.224-0.501-0.501s0.224-0.501,0.501-0.501s0.501,0.224,0.501,0.501S20.154,35.811,19.877,35.811z">
-                </path>
-                <path fill="#5d4037"
-                  d="M24.195,39.914c0.139,0.001,0.276-0.025,0.406-0.075c0.124-0.048,0.242-0.112,0.351-0.19 c0.102-0.082,0.198-0.173,0.286-0.27c0.083-0.093,0.156-0.194,0.22-0.301c0.061-0.094,0.115-0.193,0.16-0.296 c0.035-0.074,0.064-0.151,0.085-0.23v-0.045c-0.01-0.014-0.019-0.029-0.025-0.045l0,0c-0.13,0.2-0.293,0.378-0.481,0.526 c-0.144,0.136-0.314,0.24-0.501,0.306c-0.188,0.065-0.387,0.097-0.586,0.095c-0.17,0.003-0.339-0.021-0.501-0.07 c-0.139-0.044-0.269-0.112-0.386-0.2c-0.117-0.094-0.223-0.202-0.316-0.321c-0.097-0.13-0.18-0.269-0.25-0.416l0,0 c-0.011,0.011-0.02,0.025-0.025,0.04c0,0,0,0.03,0,0.04c0.068,0.192,0.156,0.376,0.26,0.551c0.094,0.168,0.212,0.322,0.351,0.456 c0.124,0.13,0.27,0.236,0.431,0.316c0.159,0.067,0.329,0.104,0.501,0.11">
-                </path>
-                <path fill="#5d4037"
-                  d="M28.613,33.968c-0.278-0.185-0.607-0.28-0.942-0.27c-0.405-0.014-0.799,0.132-1.097,0.406 c-0.336,0.333-0.478,0.815-0.376,1.277c0.046,0.436,0.22,0.85,0.501,1.187c0.236,0.315,0.608,0.501,1.002,0.501 c0.258-0.004,0.512-0.073,0.736-0.2c0.493-0.352,0.752-0.947,0.676-1.548C29.089,34.644,28.928,34.188,28.613,33.968z M27.511,35.867c-0.277,0-0.501-0.224-0.501-0.501s0.224-0.501,0.501-0.501s0.501,0.224,0.501,0.501S27.787,35.867,27.511,35.867z">
-                </path>
-                <radialGradient id="wjR_Oe2ayoe3fGfJhyhbca_LnZMjt9rZC3d_gr1" cx="20.66" cy="13.128" r="18.437"
-                  gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#fafafb"></stop>
-                  <stop offset=".293" stop-color="#f6f7f8"></stop>
-                  <stop offset=".566" stop-color="#ebecee"></stop>
-                  <stop offset=".832" stop-color="#d8dcdf"></stop>
-                  <stop offset="1" stop-color="#c8cdd1"></stop>
-                </radialGradient>
-                <path fill="url(#wjR_Oe2ayoe3fGfJhyhbca_LnZMjt9rZC3d_gr1)"
-                  d="M38.519,9.951c-0.113-0.175-0.224-0.354-0.339-0.518c-0.092-0.132-0.186-0.252-0.279-0.377	c-0.137-0.184-0.275-0.367-0.414-0.537c-0.083-0.102-0.167-0.196-0.251-0.293c-0.155-0.178-0.309-0.351-0.465-0.513	C36.7,7.64,36.63,7.57,36.559,7.5c-0.181-0.18-0.363-0.35-0.546-0.51c-0.043-0.037-0.085-0.075-0.128-0.111	c-2.281-1.946-4.592-2.44-6.076-2.765l-0.821-0.185c-3.005-0.576-5.53-0.867-8.09-0.501c-1.008,0.219-1.982,0.573-2.895,1.052	c-1.257,0.571-2.565,1.162-3.827,1.252c-1.321,0.341-2.468,1.162-3.216,2.304l-0.14,0.2c-0.671,1.403-0.847,2.992-0.501,4.508	c0.276,0.902,0.616,1.783,0.937,2.63c0.736,1.727,1.269,3.534,1.588,5.385c0.332,0.658,0.591,1.35,0.771,2.064	c0.426,1.483,0.912,3.151,2.229,4.448h0.035c0.011-0.005,0.022-0.009,0.033-0.014c0.003,0.003,0.005,0.006,0.008,0.009	c1.14-0.54,2.24-0.902,3.307-1.124c0.15-0.031,0.298-0.053,0.446-0.078c0.18-0.031,0.36-0.063,0.538-0.087	c0.289-0.037,0.576-0.064,0.861-0.081c0.025-0.002,0.05-0.005,0.075-0.006c3.649-0.2,6.912,1.133,10.1,2.433l0.575,0.238	c0.018-0.008,0.035-0.029,0.053-0.039c0.01,0.004,0.019,0.008,0.029,0.012c0.781-0.341,1.177-2.965,1.703-5.41	c1.893-4.333,6.126-7.514,5.871-11.521C39.169,10.996,38.846,10.459,38.519,9.951z">
-                </path>
-                <radialGradient id="wjR_Oe2ayoe3fGfJhyhbcb_LnZMjt9rZC3d_gr2" cx="11.72" cy="7.271" r=".104"
-                  gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#fafafb"></stop>
-                  <stop offset=".293" stop-color="#f6f7f8"></stop>
-                  <stop offset=".566" stop-color="#ebecee"></stop>
-                  <stop offset=".832" stop-color="#d8dcdf"></stop>
-                  <stop offset="1" stop-color="#c8cdd1"></stop>
-                </radialGradient>
-                <path fill="url(#wjR_Oe2ayoe3fGfJhyhbcb_LnZMjt9rZC3d_gr2)"
-                  d="M11.824,7.213c-0.052,0.051-0.112,0.094-0.162,0.148C11.712,7.307,11.772,7.264,11.824,7.213z"></path>
-                <radialGradient id="wjR_Oe2ayoe3fGfJhyhbcc_LnZMjt9rZC3d_gr3" cx="11.041" cy="8.123" r=".101"
-                  gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#fafafb"></stop>
-                  <stop offset=".293" stop-color="#f6f7f8"></stop>
-                  <stop offset=".566" stop-color="#ebecee"></stop>
-                  <stop offset=".832" stop-color="#d8dcdf"></stop>
-                  <stop offset="1" stop-color="#c8cdd1"></stop>
-                </radialGradient>
-                <path fill="url(#wjR_Oe2ayoe3fGfJhyhbcc_LnZMjt9rZC3d_gr3)"
-                  d="M11.122,8.056c-0.04,0.059-0.089,0.11-0.127,0.171l0.061-0.086	C11.076,8.111,11.102,8.086,11.122,8.056z">
-                </path>
-                <radialGradient id="wjR_Oe2ayoe3fGfJhyhbcd_LnZMjt9rZC3d_gr4" cx="31.824" cy="28.562" r=".004"
-                  gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#fafafb"></stop>
-                  <stop offset=".293" stop-color="#f6f7f8"></stop>
-                  <stop offset=".566" stop-color="#ebecee"></stop>
-                  <stop offset=".832" stop-color="#d8dcdf"></stop>
-                  <stop offset="1" stop-color="#c8cdd1"></stop>
-                </radialGradient>
-                <polygon fill="url(#wjR_Oe2ayoe3fGfJhyhbcd_LnZMjt9rZC3d_gr4)"
-                  points="31.829,28.563 31.822,28.561 31.819,28.563"></polygon>
-                <linearGradient id="wjR_Oe2ayoe3fGfJhyhbce_LnZMjt9rZC3d_gr5" x1="16.012" x2="29.033" y1="26.093"
-                  y2="26.476" gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#f44f5a"></stop>
-                  <stop offset=".443" stop-color="#ee3d4a"></stop>
-                  <stop offset="1" stop-color="#e52030"></stop>
-                </linearGradient>
-                <path fill="url(#wjR_Oe2ayoe3fGfJhyhbce_LnZMjt9rZC3d_gr5)"
-                  d="M31.473,26.384c-0.007-0.089-0.044-0.18-0.071-0.27c0-0.001-0.001-0.003-0.001-0.004	c-0.337-1.099-2.136-2.252-4.586-2.876c-0.135-0.036-0.273-0.053-0.409-0.084c-0.006-0.001-0.012-0.002-0.018-0.004	c-0.585-0.134-1.176-0.224-1.771-0.277c-0.036-0.003-0.072-0.007-0.108-0.01c-0.338-0.027-0.675-0.044-1.014-0.044	c-0.298-0.002-0.597,0.003-0.895,0.023c-0.133,0.009-0.265,0.022-0.397,0.035c-0.311,0.031-0.62,0.073-0.926,0.13	c-0.107,0.018-0.215,0.024-0.322,0.045c-2.018,0.371-3.797,1.551-4.924,3.266l0.065,2.65v0.04h0.03	c1.741-0.997,3.667-1.628,5.66-1.853c3.171-0.286,6.417,0.681,9.587,2.895h0.03v-0.05C31.616,28.803,31.64,27.584,31.473,26.384z">
-                </path>
-                <path fill="#f9f9fa" fill-rule="evenodd"
-                  d="M12.975,7.881c-0.341,1.733,1.202,7.203,0.701,10.073	c-0.26-1.503-1.222-4.508-1.182-6.176c-0.461-1.002-0.927-2.229-1.438-2.7S12.113,6.158,13,7.881"
-                  clip-rule="evenodd"></path>
-                <path fill="#c1cbd7"
-                  d="M16.476,25.493L16.476,25.493c-2.004-2.364-2.855-6.437-3.556-9.868	c-0.556-2.725-1.032-5.049-1.949-5.78l0,0c-0.109-0.148-0.182-0.319-0.21-0.501c-0.032-0.347,0.039-0.696,0.205-1.002	C11.124,8,11.367,7.705,11.672,7.485c0.193-0.133,0.414-0.218,0.646-0.25V7.28c-0.231,0.032-0.45,0.117-0.641,0.25	c-0.202,0.253-0.383,0.523-0.541,0.806c-0.451,0.902,0.501,0.857,0.857,1.347c0.927,0.746,1.002,3.196,1.563,5.931	c0.701,3.426,0.932,7.489,2.94,9.843l0,0l0,0l-0.03,0.035">
-                </path>
-                <path fill="#f9f9fa" fill-rule="evenodd"
-                  d="M16.401,7.175c-0.346,1.728,0.536,5.705,0,8.58	c-0.26-1.503-1.222-4.508-1.182-6.171c-0.466-1.002-1.002-2.164-1.347-2.76s1.237-1.257,2.505,0.351"
-                  clip-rule="evenodd"></path>
-                <path fill="#c1cbd7"
-                  d="M15.73,6.564c-0.278-0.233-0.65-0.318-1.002-0.23c-0.138,0.015-0.27,0.063-0.386,0.14	c-0.102,0.067-0.171,0.175-0.19,0.296c0,0.18-0.14,0.21,0,0.546l0,0c1.122,1.503,2.004,4.042,2.214,6.722	c0.301,3.401-0.095,7.168,2.159,9.838l-0.035,0.03c-2.264-2.685-2.6-6.457-2.895-9.863c-0.24-2.675-0.456-5.129-1.568-6.637l0,0	c-0.189-0.211-0.285-0.489-0.265-0.771c0.022-0.132,0.096-0.249,0.205-0.326c0.123-0.086,0.266-0.138,0.416-0.15	c0.479-0.038,0.956,0.093,1.347,0.371l-0.03,0.035">
-                </path>
-                <path fill="#f9f9fa"
-                  d="M21.911,4.129c1.042,1.738-0.872,9.562-1.222,14.476c-0.03,0.416-3.697-16.224,1.212-14.476"></path>
-                <path fill="#c1cbd7"
-                  d="M21.475,22.943c-1.475-4.089-2.37-8.365-2.66-12.703c-0.113-1.435,0.002-2.879,0.341-4.278	c0.326-1.112,0.897-1.843,1.783-1.974c0.324-0.042,0.652-0.018,0.967,0.07v0.045c-0.319-0.059-0.647-0.049-0.962,0.03	c-0.741,0.17-0.651,0.631-1.137,1.678c-0.379,1.346-0.502,2.751-0.361,4.142c0.631,4.127,1.408,9.758,2.079,12.958H21.49">
-                </path>
-                <path fill="#c1cbd7"
-                  d="M24.931,22.678c-0.05-0.336-0.095-0.676-0.145-1.002c-0.771-5.59-1.718-12.402,1.598-17.296	h0.04c-1.357,3.622-1.543,10.519-1.703,12.743c-0.07,0.962,0.04,3.005,0.115,4.508c0.045,0.346,0.1,0.686,0.145,1.027h-0.05">
-                </path>
-                <path fill="#c1cbd7"
-                  d="M28.528,23.394c0.115-2.885,0.421-6.261,0.701-9.187c0.696-3.687,2.57-5.43,3.061-9.157	V5.006c-1.69,2.827-2.813,5.956-3.306,9.212c-0.457,3.036-0.597,6.112-0.416,9.177h-0.05">
-                </path>
-                <g>
-                  <path fill="#c1cbd7"
-                    d="M37.218,9.429c-1.503,4.628-3.276,9.152-5.079,13.73C32.189,17.098,35.435,9.804,37.218,9.429">
-                  </path>
-                  <path fill="#c1cbd7"
-                    d="M31.258,25.197c0.791-0.821,0.847-2.084,0.917-3.551c-0.017-1.501,0.251-2.992,0.791-4.393 c0-0.06,0.045-0.155,0.08-0.286c0.441-1.528,2.199-7.684,4.248-7.574v0.045c-1.608-0.06-3.657,6.011-4.142,7.549 c-0.035,0.125-0.045,0.205-0.065,0.27l0,0c-0.576,1.503-0.611,3.005-0.801,4.378c-0.065,1.473-0.19,2.745-1.002,3.576h-0.03">
-                  </path>
-                </g>
-              </svg>
-            </a>
-            <a class="text-gray-900 text-2xl hover:text-pink-500"
-              href="https://www.geeksforgeeks.org/user/visheshj5s5g/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                <path fill="#43a047"
-                  d="M29.035,24C29.014,23.671,29,23.339,29,23c0-6.08,2.86-10,7-10c3.411,0,6.33,2.662,7,7l2,0l0.001-9	L43,11c0,0-0.533,1.506-1,1.16c-1.899-1.066-3.723-1.132-6.024-1.132C30.176,11.028,25,16.26,25,22.92	c0,0.364,0.021,0.723,0.049,1.08h-2.099C22.979,23.643,23,23.284,23,22.92c0-6.66-5.176-11.892-10.976-11.892	c-2.301,0-4.125,0.065-6.024,1.132C5.533,12.506,5,11,5,11l-2.001,0L3,20l2,0c0.67-4.338,3.589-7,7-7c4.14,0,7,3.92,7,10	c0,0.339-0.014,0.671-0.035,1H0v2h1.009c1.083,0,1.977,0.861,1.999,1.943C3.046,29.789,3.224,32.006,4,33c1.269,1.625,3,3,8,3	c5.022,0,9.92-4.527,11-10h2c1.08,5.473,5.978,10,11,10c5,0,6.731-1.375,8-3c0.776-0.994,0.954-3.211,0.992-5.057	C45.014,26.861,45.909,26,46.991,26H48v-2H29.035z M11.477,33.73C9.872,33.73,7.322,33.724,7,32	c-0.109-0.583-0.091-2.527-0.057-4.046C6.968,26.867,7.855,26,8.943,26H19C18.206,30.781,15.015,33.73,11.477,33.73z M41,32	c-0.322,1.724-2.872,1.73-4.477,1.73c-3.537,0-6.729-2.949-7.523-7.73h10.057c1.088,0,1.975,0.867,2,1.954	C41.091,29.473,41.109,31.417,41,32z">
-                </path>
-              </svg>
-            </a>
-            <a class="text-gray-900 text-2xl hover:text-pink-500"
-              href="https://www.hackerrank.com/profile/visheshjindal04" target="_blank">
-              <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 582 486.999">
-                <path d="M-1-1h582v402H-1z" fill="none" />
-                <path
-                  d="M454.843 141.001c-13.019-22.417-172.832-115-198.859-115-26.019 0-185.895 92.351-198.84 115-12.947 22.649-13.019 207.358 0 230.009 13.018 22.639 172.839 114.989 198.84 114.989 26 0 185.841-92.466 198.851-114.999 13.007-22.533 13.016-207.583.008-229.999zM309.862 398.15c-3.559 0-36.756-32.137-34.141-34.762.781-.78 5.625-1.328 15.768-1.644 0-23.564.53-61.622.844-77.553.038-1.814-.395-3.081-.395-5.256h-71.812c0 6.379-.412 32.523 1.232 65.479.205 4.078-1.42 5.353-5.158 5.335-9.102-.025-18.211-.099-27.321-.071-3.683.009-5.274-1.374-5.157-5.488.826-30.043 2.66-75.488-.134-191.07v-2.849c-8.688-.314-14.717-.862-15.508-1.652-2.624-2.624 31.032-34.76 34.581-34.76 3.558 0 36.989 32.145 34.383 34.76-.782.781-7.098 1.338-15.067 1.652v2.84c-2.174 23.135-1.823 71.506-2.362 94.686h72.107c0-4.089.351-31.212-1.077-75.145-.091-3.047.853-4.646 3.781-4.672 9.945-.072 19.9-.117 29.855-.055 3.108.019 4.105 1.546 4.043 4.834-3.28 171.861-.594 159.867-.594 188.975 7.97.315 15.112.864 15.895 1.655 2.588 2.615-30.205 34.761-33.763 34.761z"
-                  fill="#2ec866" />
-              </svg>
-            </a>
-            <a class="text-gray-900 text-2xl hover:text-pink-500"
-              href="https://www.hackerrank.com/profile/visheshjindal04" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" enable-background="new 0 0 24 24"
-                viewBox="0 0 24 24" id="code-forces">
-                <path fill="#2196F3"
-                  d="M13.5,21c0.828,0,1.5-0.672,1.5-1.5v-15C15,3.672,14.328,3,13.5,3h-3C9.673,3,9,3.672,9,4.5v15c0,0.828,0.673,1.5,1.5,1.5H13.5L13.5,21z">
-                </path>
-                <path fill="#1D83D4" d="M12,3h-1.5C9.673,3,9,3.672,9,4.5v15c0,0.828,0.673,1.5,1.5,1.5H12V3L12,3z">
-                </path>
-                <path fill="#FFC107"
-                  d="M0,19.5C0,20.328,0.673,21,1.5,21h3C5.328,21,6,20.328,6,19.5V9c0-0.828-0.672-1.5-1.5-1.5h-3C0.673,7.5,0,8.172,0,9V19.5L0,19.5z">
-                </path>
-                <path fill="#DEA806"
-                  d="M3.25,7.5H1.5C0.673,7.5,0,8.172,0,9v10.5C0,20.328,0.673,21,1.5,21h1.75V7.5L3.25,7.5z"></path>
-                <path fill="#F44336"
-                  d="M24,19.5V12c0-0.828-0.672-1.5-1.5-1.5h-3c-0.828,0-1.5,0.672-1.5,1.5v7.5c0,0.828,0.672,1.5,1.5,1.5h3C23.328,21,24,20.328,24,19.5L24,19.5z">
-                </path>
-                <path fill="#D43A2F"
-                  d="M21,10.5h-1.5c-0.828,0-1.5,0.672-1.5,1.5v7.5c0,0.828,0.672,1.5,1.5,1.5H21V10.5L21,10.5z"></path>
-              </svg>
-            </a>
-          </span>
-        </div>
-      </span>
-    </div>
-  </section>
-  <section id="portfolio" class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Portfolio</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This Section includes all of my projects.</p>
-      </div>
-      <div class="flex flex-wrap m-20">
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="assests/images/climaquell.png">
-            <div
-              class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:scale-105 transition-all duration-1000 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">ClimaQuell</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/601x361">
-            <div
-              class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:scale-105 transition-all duration-1000 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Trash Master</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/603x363">
-            <div
-              class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:scale-105 transition-all duration-1000 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Guessing Gauntlet</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/602x362">
-            <div
-              class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:scale-105 transition-all duration-1000 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Simon Game</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/605x365">
-            <div
-              class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:scale-105 transition-all duration-1000 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MIET Bookstore</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="lg:w-1/3 sm:w-1/2 p-4">
-          <div class="flex relative">
-            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
-              src="https://dummyimage.com/606x366">
-            <div
-              class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:scale-105 transition-all duration-1000 hover:opacity-100">
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">MLSA Dev Gathering</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing
-                tousled waistcoat.</p>
+          <!-- Cloud Computing  -->
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="rounded flex p-4 h-full items-center">
+              <span class="title-font font-medium w-1/4"
+                ><i class="fa-solid fa-cloud"></i> Cloud Computing</span
+              >
+              <div
+                class="w-3/4 bg-gray-200 rounded-full h-2.5 bg-gray-100 ml-4"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 40%"
+                ></div>
+              </div>
+              <span class="ml-4">40%</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
-  <section id="contact" class="text-gray-600 body-font relative">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-12">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-          Contact Me
+    </section>
+    <section id="portfolio" class="text-gray-600 body-font">
+      <div class="container px-24 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+          >
+            Portfolio
+          </h1>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <a href="https://github.com/Vishesh-04/ClimaQuell-AI" target="_blank">
+            <div
+              class="p-4 md:w-1/3"
+              data-aos="fade-down-right"
+              data-aos-duration="1500"
+            >
+              <div
+                class="hover:scale-105 transition-all duration-1000 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="assests/images/climaquell.jpg"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    ClimaQuell
+                  </h1>
+                  <p class="leading-relaxed mb-3">
+                    ClimaQuell is an AI-powered chatbot providing users with
+                    timely weather and groundwater insights across regions in
+                    India, with plans for global expansion.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/Vishesh-04/TrashMaster" target="_blank">
+            <div
+              class="p-4 md:w-1/3"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
+              <div
+                class="hover:scale-105 transition-all duration-1000 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="assests/images/trashmaster.png"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    Trash Master
+                  </h1>
+                  <p class="leading-relaxed mb-3">
+                    TrashMaster is a Domestic Waste Management system that
+                    allows users to schedule visits from a trash truck for waste
+                    pickup. The platform enables efficient waste disposal, with
+                    truck drivers accessing the waste, determining the payment,
+                    and ensuring proper disposal practices.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      href="https://github.com/Vishesh-04/TrashMaster"
+                      target="_blank"
+                      class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Vishesh-04/The-Guessing-Gauntlet"
+            target="_blank"
+          >
+            <div
+              class="p-4 md:w-1/3"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
+              <div
+                class="hover:scale-105 transition-all duration-1000 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="assests/images/guessing.png"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    The Guessing Gauntlet
+                  </h1>
+                  <p class="leading-relaxed mb-3">
+                    The Guessing Gauntlet is a multiplayer guessing game where
+                    three players compete to guess a randomly generated number
+                    between 0 and 10. The player who correctly guesses the
+                    number wins the game.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      href="https://github.com/Vishesh-04/The-Guessing-Gauntlet"
+                      target="_blank"
+                      class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <a href="https://github.com/Vishesh-04/Simon-Game" target="_blank">
+            <div
+              class="p-4 md:w-1/3"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <div
+                class="hover:scale-105 transition-all duration-1000 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="assests/images/simon.png"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    The Simon Game
+                  </h1>
+                  <p class="leading-relaxed mb-3">
+                    This is a web-based implementation of the classic Simon
+                    Game. Test your memory skills by repeating the pattern of
+                    colors generated by the game. The difficulty increases as
+                    you progress through the levels.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      href="https://github.com/Vishesh-04/ClimaQuell-AI"
+                      target="_blank"
+                      class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Vishesh-04/Miet-Bookstore"
+            target="_blank"
+          >
+            <div
+              class="p-4 md:w-1/3"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
+              <div
+                class="hover:scale-105 transition-all duration-1000 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="assests/images/miet.png"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    MIET Bookstore
+                  </h1>
+                  <p class="leading-relaxed mb-3">
+                    MIET Bookstore is a platform for selling and buying
+                    second-hand books, promoting sustainability and reducing the
+                    need for cutting down trees. By reusing books, we can extend
+                    their lifespan and contribute to a greener future.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      href="https://github.com/Vishesh-04/Miet-Bookstore"
+                      target="_blank"
+                      class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Vishesh-04/Tourist-Temperature-Guide"
+            target="_blank"
+          >
+            <div
+              class="p-4 md:w-1/3"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
+              <div
+                class="hover:scale-105 transition-all duration-1000 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="assests/images/tt.png"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    Tourist temperature Guide
+                  </h1>
+                  <p class="leading-relaxed mb-3">
+                    The Tourist Temperature Guide is a Temperature Alert Agent
+                    built using Fetch.AI's uAgent library. It provides a
+                    user-friendly interface where users can input their desired
+                    location and preferred temperature range and alerts the user
+                    if the current temperature of the location falls outside
+                    their specified range.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      href="https://github.com/Vishesh-04/Tourist-Temperature-Guide"
+                      target="_blank"
+                      class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <a
+            href="https://github.com/Vishesh-04/Object-Measurement-Project"
+            target="_blank"
+          >
+            <div
+              class="p-4 md:w-1/3"
+              data-aos="fade-up-right"
+              data-aos-duration="1500"
+            >
+              <div
+                class="hover:scale-105 transition-all duration-1000 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="assests/images/scale.png"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    Object Measurement Project
+                  </h1>
+                  <p class="leading-relaxed mb-3">
+                    The Real-Time Object Measurement project is designed to
+                    measure the real-world dimensions of an object in real-time
+                    using a webcam, PyCharm, OpenCV, and Numpy.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      href="https://github.com/Vishesh-04/Object-Measurement-Project"
+                      target="_blank"
+                      class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Vishesh-04/ToDo-List-Vishesh-Jindal"
+            target="_blank"
+          >
+            <div
+              class="p-4 md:w-1/3"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <div
+                class="hover:scale-105 transition-all duration-1000 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="assests/images/to.png"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    To-Do App
+                  </h1>
+                  <p class="leading-relaxed mb-3">
+                    The To-Do App is a simple task manager built with HTML, CSS,
+                    and Tailwind CSS. It lets users add, edit, and delete tasks
+                    through a clean, responsive, and minimalist interface for
+                    better organization.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      href="https://github.com/Vishesh-04/ToDo-List-Vishesh-Jindal"
+                      target="_blank"
+                      class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/Vishesh-04/Background-Color-Change-React-Application"
+            target="_blank"
+          >
+            <div
+              class="p-4 md:w-1/3"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <div
+                class="hover:scale-105 transition-all duration-1000 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover object-center"
+                  src="assests/images/back.png"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                    Background Color Change
+                  </h1>
+                  <p class="leading-relaxed mb-3">
+                    The Background Color Changer is a React app that lets users
+                    change the background color with a click, offering a smooth
+                    and interactive UI.
+                  </p>
+                  <div class="flex items-center flex-wrap">
+                    <a
+                      href="https://github.com/Vishesh-04/Background-Color-Change-React-Application"
+                      target="_blank"
+                      class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
+                      >Learn More
+                      <svg
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="text-gray-600 body-font relative">
+      <div class="container px-5 py-16 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+          >
+            Contact Me
+          </h1>
+          <p class="text-base leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto">
+            Have a Project, Let's Collaborate!
+          </p>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="subject" class="leading-7 text-sm text-gray-600"
+                  >Subject</label
+                >
+                <input
+                  type="subject"
+                  id="subject"
+                  name="subject"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+            </div>
+            <div
+              class="p-2 w-full"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+            >
+              <button
+                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer" class="dark:bg-slate-900">
+      <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+        <h1
+          class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-100"
+        >
+          Vishesh Jindal
         </h1>
+        <a class="text-indigo-700" href="mailto:visheshjindal04@gmail.com"
+          >visheshjindal04@gmail.com</a
+        >
+        <p class="leading-normal my-5 text-gray-100">
+          Meerut, <br />UP, INDIA - 250002
+        </p>
+        <span class="inline-flex">
+          <div
+            class="flex justify-center py-10"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <span class="inline-flex space-x-4">
+              <a
+                class="text-gray-100 text-2xl hover:text-blue-600"
+                href="https://linkedin.com/in/vishesh-jindal"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                class="text-gray-100 text-2xl hover:text-gray-800"
+                href="https://github.com/Vishesh-04"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                class="text-gray-100 text-2xl hover:text-pink-500"
+                href="https://www.instagram.com/vishesh_jindal_28/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </span>
+          </div>
+        </span>
+        <h4
+          class="copyright text-gray-100"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
+          Built with <i class="fas fa-code"></i> and
+          <i class="fas fa-heart"></i> by
+          <a href="https://www.linkedin.com/in/vishesh-jindal/"
+            ><span>Vishesh Jindal</span></a
+          >
+        </h4>
       </div>
-      <div class="lg:w-1/2 md:w-2/3 mx-auto">
-        <div class="flex flex-wrap -m-2">
-          <div class="p-2 w-1/2">
-            <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-              <input type="text" id="name" name="name"
-                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-          </div>
-          <div class="p-2 w-1/2">
-            <div class="relative">
-              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-              <input type="email" id="email" name="email"
-                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-          </div>
-          <div class="p-2 w-full">
-            <div class="relative">
-              <label for="subject" class="leading-7 text-sm text-gray-600">Subject</label>
-              <input type="subject" id="subject" name="subject"
-                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-            </div>
-          </div>
-          <div class="p-2 w-full">
-            <div class="relative">
-              <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-              <textarea id="message" name="message"
-                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-            </div>
-          </div>
-          <div class="p-2 w-full">
-            <button
-              class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="footer" class="dark:bg-slate-900">
-    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-100">
-        Vishesh Jindal
-      </h1>
-      <a class="text-indigo-700">visheshjindal04@gmail.com</a>
-      <p class="leading-normal my-5 text-gray-100">
-        Meerut, <br />UP, INDIA - 250002
-      </p>
-      <span class="inline-flex">
-        <div class="flex justify-center py-10">
-          <span class="inline-flex space-x-4">
-            <a class="text-gray-100 text-2xl hover:text-blue-600" href="https://linkedin.com/in/vishesh-jindal"
-              target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a class="text-gray-100 text-2xl hover:text-gray-800" href="https://github.com/Vishesh-04" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a class="text-gray-100 text-2xl hover:text-pink-500" href="https://www.instagram.com/vishesh_jindal_28/"
-              target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </span>
-        </div>
-      </span>
-      <h4 class="copyright text-gray-100">
-        Built with <i class="fas fa-code"></i> and
-        <i class="fas fa-heart"></i> by
-        <a href="https://www.linkedin.com/in/vishesh-jindal/"><span>Vishesh Jindal</span></a>
-      </h4>
-    </div>
-  </section>
+    </section>
 
-  <script src="assests/js/main.js"></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const typedItems = document
-        .querySelector("#typed")
-        .dataset.typedItems.split(", ");
-      new Typed("#typed", {
-        strings: typedItems,
-        typeSpeed: 80,
-        backSpeed: 50,
-        backDelay: 2000,
-        loop: true,
+    <script src="assests/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const typedItems = document
+          .querySelector("#typed")
+          .dataset.typedItems.split(", ");
+        new Typed("#typed", {
+          strings: typedItems,
+          typeSpeed: 80,
+          backSpeed: 50,
+          backDelay: 2000,
+          loop: true,
+        });
       });
-    });
-  </script>
-  <script>
-    const carousel = document.getElementById("carousel");
-    let currentIndex = 0;
-    const totalItems = carousel.children.length;
-
-    const updateCarousel = () => {
-      const offset = -currentIndex * 100; // Move to the next icon
-      carousel.style.transform = `translateX(${offset}%)`;
-      currentIndex = (currentIndex + 1) % totalItems; // Loop back to the start
-    };
-
-    // Auto-cycle every 3 seconds
-    setInterval(updateCarousel, 3000);
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
