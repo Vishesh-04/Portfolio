@@ -1,9 +1,9 @@
 {
   "dependencies": {
     "@coreui/icons": "^3.0.1",
-    "@tailwindcss/cli": "^4.0.0",
+    "@tailwindcss/cli": "^4.0.14",
     "@vercel/analytics": "^1.4.1",
     "flowbite": "^2.5.2",
-    "tailwindcss": "^4.0.0"
+    "tailwindcss": "^4.0.14"
   }
 }
