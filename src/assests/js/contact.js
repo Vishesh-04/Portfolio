@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        alert("Registration successful! Your form has been submitted.");
+        alert("Details submitted successfully! Your form has been submitted.");
         form.reset();
       })
       .catch((error) => {
